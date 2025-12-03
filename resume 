@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Stylish Resume & Bio-data Website</title>
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        background: #f3f6fa;
+        scroll-behavior: smooth;
+    }
+
+    header {
+        background: linear-gradient(135deg, #4e54c8, #8f94fb);
+        padding: 25px;
+        color: white;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    nav a {
+        color: white;
+        margin: 0 20px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 17px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        opacity: 0.7;
+        text-decoration: underline;
+    }
+
+    /* SECTION STYLING */
+    section {
+        background: white;
+        margin: 30px auto;
+        padding: 25px;
+        width: 85%;
+        max-width: 900px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        animation: fadeIn 1s ease;
+    }
+
+    h2 {
+        color: #4e54c8;
+        border-left: 5px solid #4e54c8;
+        padding-left: 10px;
+    }
+
+    ul li {
+        margin-bottom: 8px;
+        line-height: 1.6;
+    }
+
+    button {
+        background: #4e54c8;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        margin-top: 10px;
+        font-size: 15px;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #6c70ff;
+        transform: scale(1.05);
+    }
+
+    /* TABLE */
+    table {
+        width: 100%;
+        background: #fafafa;
+        border-collapse: collapse;
+        margin-top: 20px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tr:nth-child(even) {
+        background: #f2f2ff;
+    }
+
+    /* ANIMATION */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>My Personal Website</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#resume">Resume</a>
+        <a href="#biodata">Bio-data</a>
+    </nav>
+</header>
+
+<!-- HOME SECTION -->
+<section id="home">
+    <h2> HELLO! I am Srushti SP</h2>
+    <p> This containing short information of my Resume and Bio-data.
+    tap click me to explore more.</p>
+    <button onclick="welcomeMsg()">Click Me</button>
+</section>
+
+<!-- RESUME -->
+<section id="resume">
+    <h2>My Resume</h2>
+
+    <h3>Personal Details</h3>
+    <ul>
+        <li><strong>Name:</strong> Srushti SP</li>
+        <li><strong>Email:</strong> Srushtisp47@gmail.com</li>
+        <li><strong>Phone:</strong> 8431732742</li>
+    </ul>
+
+    <h3>Education</h3>
+    <ul>
+        <li>B.Tech / Akshaya institute of technology, tumkur (2023-2027)</li>
+        <li>PUC – Global mahesh pu college (2021-2022)</li>
+        <li>10th – Sri krishna high school (2020)</li>
+    </ul>
+
+    <h3>Skills</h3>
+    <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python / Java</li>
+        <li>Communication Skills</li>
+    </ul>
+
+    <h3>Projects</h3>
+    <p>• Project Name – expense tracker system.</p>
+</section>
+
+<!-- BIODATA -->
+<section id="biodata">
+    <h2>Bio-data</h2>
+
+    <table>
+        <tr><td><strong>Name</strong></td><td>Srushti SP</td></tr>
+        <tr><td><strong>Father’s Name</strong></td><td>Purushotham SP</td></tr>
+        <tr><td><strong>Date of Birth</strong></td><td>20-08-2005</td></tr>
+        <tr><td><strong>Gender</strong></td><td>Female</td></tr>
+        <tr><td><strong>Nationality</strong></td><td>Indian</td></tr>
+        <tr><td><strong>Languages</strong></td><td>English, Kannada, Hindi</td></tr>
+        <tr><td><strong>Address</strong></td><td>Soonagahalli, mandya district</td></tr>
+    </table>
+</section>
+
+<script>
+function welcomeMsg() {
+    alert("Welcome to my Resume and bio-data!");
+}
+</script>
+
+</body>
+</html>
